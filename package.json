@@ -4,9 +4,18 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "esbuild main.ts --global-name=main --outfile=main.dist.js --format=iife --bundle --minify"
+    "build.esm": "esbuild unified.ts --outfile=dist/unified.esm.js --format=esm --bundle --minify",
+    "build.iife": "esbuild unified.ts --outfile=dist/unified.iife.js --format=iife --global-name=unified --bundle --minify"
+  },
+  "devDependencies": {
+    "esbuild": "^0.6.8"
   },
   "dependencies": {
-    "esbuild": "^0.6.8"
+    "remark-parse": "^8.0.3",
+    "remark-stringify": "^8.1.1",
+    "rehype-parse": "^7.0.1",
+    "rehype-stringify": "^8.0.0",
+    "unist-builder": "^2.0.3",
+    "unist-util-visit": "^2.0.3"
   }
 }
