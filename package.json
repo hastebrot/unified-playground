@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "unified-playground",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild main.ts --global-name=main --outfile=main.dist.js --format=iife --bundle --minify"
+  },
+  "dependencies": {
+    "esbuild": "^0.6.8"
+  }
+}
