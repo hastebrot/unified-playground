@@ -8,7 +8,7 @@
     "build.iife": "esbuild unified.ts --outfile=dist/unified.iife.js --format=iife --global-name=unified --bundle --minify"
   },
   "devDependencies": {
-    "esbuild": "^0.6.8"
+    "esbuild": "^0.25.0"
   },
   "dependencies": {
     "remark-parse": "^8.0.3",
